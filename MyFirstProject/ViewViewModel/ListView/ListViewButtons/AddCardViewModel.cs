@@ -25,10 +25,10 @@ namespace MyFirstProject.ViewViewModel.ListView.ListViewButtons
             {
                 Application.Current.MainPage.DisplayAlert(Titles.AddTitle, Msgs.NotEmpty, "Ok");
                 return;
-            }
+            }   
 
             PlayingCard cards = new PlayingCard();
-            cards.Name = _cardText;
+            cards.Name = _cardText; 
 
             MessagingCenter.Send<PlayingCard>(cards, "AddCards");
             Application.Current.MainPage.Navigation.PopAsync();
