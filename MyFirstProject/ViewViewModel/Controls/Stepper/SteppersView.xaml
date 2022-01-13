@@ -16,7 +16,8 @@
                      Maximum="360"
                      Increment="18"
                      BackgroundColor="Blue"
-                     HorizontalOptions="Center"/>
+                     HorizontalOptions="Center"
+                     ValueChanged="OnStepperValueChanged"/>
 
             <Label x:Name="_displayLabel"
                    FontAttributes="Bold"

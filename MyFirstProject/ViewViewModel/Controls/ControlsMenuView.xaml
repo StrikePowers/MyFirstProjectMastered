@@ -17,7 +17,7 @@
             <Button Grid.Row="0"
                    Grid.Column="0"
                    Text="Switch"
-                   Command="{Binding OnListViewButtonsClicked}"/>
+                   Command="{Binding OnSwitchViewClicked}"/>
             <Button Grid.Row="0"
                    Grid.Column="0"
                    Text="t"
