@@ -1,5 +1,6 @@
 ﻿using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel.Controls.Slider;
+using MyFirstProject.ViewViewModel.Controls.Stepper;
 using MyFirstProject.ViewViewModels;
 using System;
 using System.Collections.Generic;
@@ -12,15 +13,21 @@ namespace MyFirstProject.ViewViewModel.Controls
     public class ControlsMenuViewModel : BaseViewModel
     {
         public ICommand OnSliderViewClicked { get; set; }
+        public ICommand OnSteppersViewClicked { get; set; }
 
         public ControlsMenuViewModel()
         {
             Title = Titles.ListViewTitle;
             OnSliderViewClicked = new Command(OnSliderViewClickedAsync);
+            OnSteppersViewClicked = new Command(OnSteppersViewClickedAsync);
         }
         private async void OnSliderViewClickedAsync(object obj)
         {
             await Application.Current.MainPage.Navigation.PushAsync(new SliderView());
+        }
+        private async void OnSteppersViewClickedAsync(object obj)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new SteppersView());
         }
     }
 }

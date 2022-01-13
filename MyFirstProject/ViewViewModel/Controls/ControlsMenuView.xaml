@@ -13,7 +13,7 @@
             <Button Grid.Row="0"
                    Grid.Column="0"
                    Text="Stepper"
-                   Command="{Binding OnListViewImagesClicked}"/>
+                   Command="{Binding OnSteppersViewClicked}"/>
             <Button Grid.Row="0"
                    Grid.Column="0"
                    Text="Switch"
